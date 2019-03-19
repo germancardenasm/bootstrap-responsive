@@ -4,10 +4,32 @@ $body-color: black;
 body {
   font-family: 'Roboto', sans-serif;
   color: $body-color;
+  padding-top: 80px;
 }
 
+.navbar{
+  padding: 30px 15px;
+  transition: all 0.5s;
+  img{
+    width: 250px;
+    height: auto;
+  }
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,.7);
 
-header, footer {
+  &:hover{
+    color: rgba(255,255,255,1);
+  }
+}
+
+.cbp-af-header-shrink{
+  padding-bottom: 5px;
+  padding-top: 5px;
+  opacity: 0.9;
+}
+
+footer {
   background-color: #333;
   color: #ddd;
   padding: 20px;
